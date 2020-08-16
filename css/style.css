@@ -1,0 +1,31 @@
+@import './header.css';
+@import './main.css';
+@import './footer.css';
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+
+.container {
+    font: 300 1em "Roboto", sans-serif;
+}
+
+
+a:link,
+a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: rgb(192, 57, 43);
+}

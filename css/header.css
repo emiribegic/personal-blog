@@ -1,0 +1,85 @@
+.hnav h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid rgba(224, 224, 224, 0.75);
+    font-weight: 800;
+    font-family: "Roboto Slab", serif;
+}
+
+
+.hnav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 2.25em;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+/* ----- Screen Sizes ----- */
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width: 900px) {
+    .hnav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .hnav h2 {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 2.25em;
+        padding-bottom: 0;
+        border: none;
+    }
+
+
+    .hnav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    .hnav li {
+        list-style: none;
+        margin: 0 1em;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 901px) {
+    .hnav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .hnav h2 {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 1em;
+        padding-bottom: 0;
+        border: none;
+    }
+
+
+    .hnav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    .hnav li {
+        list-style: none;
+        margin: 0 1em;
+    }
+}

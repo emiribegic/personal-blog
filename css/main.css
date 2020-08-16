@@ -1,0 +1,166 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+
+article {
+    width: auto;
+    height: 400px;
+    position: relative;
+}
+
+
+section {
+    position: absolute;
+    bottom: 0.8em;
+    right: 0.8em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    max-width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+
+section h3 {
+    text-decoration: underline;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ----- Screen Sizes ----- */
+
+/* Small Screens */
+@media (min-width: 400px) and (max-width: 599px) {
+    article {
+        position: relative;
+    }
+
+
+    img {
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+    }
+
+
+    article:hover img {
+        opacity: 0.3;
+    }
+
+
+    section {
+        width: 250px;
+        height: auto;
+        transition: 0.5s ease;
+        opacity: 0;
+        background-color: #000;
+    }
+
+
+    article:hover section {
+        opacity: 1;
+    }
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 1em;
+    }
+
+
+    article {
+        position: relative;
+    }
+
+
+    img {
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+    }
+
+
+    article:hover img {
+        opacity: 0.3;
+    }
+
+
+    section {
+        width: 150px;
+        height: auto;
+        transition: 0.5s ease;
+        opacity: 0;
+        background-color: #000;
+    }
+
+
+    article:hover section {
+        opacity: 1;
+    }
+
+
+    .tokyo {
+        object-position: 100% 0;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 901px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        gap: 1em;
+    }
+
+
+    article {
+        position: relative;
+    }
+
+
+    img {
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+    }
+
+
+    article:hover img {
+        opacity: 0.3;
+    }
+
+
+    section {
+        width: 150px;
+        height: auto;
+        transition: 0.5s ease;
+        opacity: 0;
+        background-color: #000;
+    }
+
+
+    article:hover section {
+        opacity: 1;
+    }
+
+
+    .tokyo {
+        object-position: 100% 0;
+    }
+}
